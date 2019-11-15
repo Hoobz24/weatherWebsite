@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"  Access-Control-Allow-Origin: *>
+
+  <head>
+    <meta charset="utf-8">
+    <title>WEATHER</title>
+
+
+    <style media="screen">
+
+
+    .forecast{
+      border: 1px solid white;
+      width: 100%;
+      height: 200px;
+
+    }
+
+    body {
+      margin: 0;
+       text-align: center;
+       background-image: url("background.jpg");
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-position: 50% 50%;
+    }
+
+
+
+      .outer-div
+    {
+         padding: 0px;
+         height: 100vh;
+    }
+    .inner-div
+    {
+
+         margin: 0 auto;
+
+         background:rgba(0,0,0,.8);
+         width: 50%;
+         height: 100vh;
+    }
+
+      * {
+      font-family: Verdana, Tahoma, "Trebuchet MS", "DejuVu Sans", "Bitstream Vera Sans", sans-serif;
+      color: white;
+    }
+
+
+    .line {
+        border: none;
+        color: #white;
+        background: transparent;
+        border-bottom: 1px dotted white;
+        padding: 5px 2px 0 2px;
+    }
+
+    .line:focus {
+        outline: none;
+        border-color: white;
+    }
+
+    .metro {
+        display: inline-block;
+        padding: 5px;
+        margin: 10px;
+        background: #white;
+        color: black;
+
+        /* Font styles */
+
+        font-weight: bold;
+        text-decoration: none;
+        border: none;
+    }
+
+    .metro:hover {
+        background: #0AF
+        color: black;
+    }
+
+    </style>
+  </head>
+  <body>
+  <div class="outer-div">
+    <div class="inner-div">
+        <div align="center" class="">
+          <p1 style="fontfam">Location:</p1>
+          <input class="line"  type="text" id="loco" value="">
+          <button class="metro" align="center" type="button" name="button" onclick="onPress()">Search</button>
+        </div>
+          <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+          <script type="text/javascript" src="main.js"></script>
+
+          <h1 style="fontfam" align="center" id="location"></h1>
+          <h2 style="fontfam" align="center" id="temp"><h2>
+          <h2 style="fontfam" align="center" id="clouds"><h3>
+
+
+          <br>
+          <h2 style="fontfam" align="center">4 Day Forecast<h3>
+
+          <table class="forecast">
+          	<tbody>
+          		<tr>
+          			<td id="day1"> </td>
+          			<td id="day2"></td>
+          			<td id="day3"> </td>
+          			<td id="day4"> </td>
+          		</tr>
+          		<tr>
+          			<td id="high1"> </td>
+          			<td id="high2"> </td>
+          			<td id="high3"> </td>
+          			<td id="high4"> </td>
+          		</tr>
+          		<tr>
+          			<td id="low1"> </td>
+          			<td id="low2"> </td>
+          			<td id="low3"> </td>
+          			<td id="low4"> </td>
+          		</tr>
+          		<tr>
+          			<td> </td>
+          			<td> </td>
+          			<td> </td>
+          			<td> </td>
+          		</tr>
+          	</tbody>
+          </table>
+      </div>
+  </div>
+
+  </body>
+</html>
